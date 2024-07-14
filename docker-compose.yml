@@ -15,7 +15,7 @@ services:
   prometheus:
     image: prom/prometheus:v2.47.2
     container_name: kuravskiyvv-netology-prometheus
-    command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
+    command: --web.enable-lifecycle  --config.file=/home/prometheus.yml
     ports:
       - 9090:9090
     volumes:
